@@ -77,7 +77,7 @@ def join_table(tables, group, indexes, type_, dataset):
 
 def save_to_csv(prefix, group, dataset):
     table = dataset['%s_%s' % (prefix, group)]
-    with open('%s_%s.csv' % (prefix, group), 'w') as outfile:
+    with open('%s_%s.csv' % (prefix, group), 'w', newline='') as outfile:
         outdict = csv.DictWriter(outfile, fieldnames=table.columns)
         outdict.writeheader()
         for row in table:
