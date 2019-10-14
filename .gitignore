@@ -12,3 +12,7 @@ docs/builddir/
 setup.cfg
 .idea/
 .ropeproject/
+*.vscode/
+*__pycache__
+*.eggs/
+*.ipynb*

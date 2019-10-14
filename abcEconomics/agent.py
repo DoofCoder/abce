@@ -92,6 +92,7 @@ class Agent(Logger, Trade, Messenger, Goods):
         # name_without_colon is used for logging purpose
         self.name_without_colon = '%s_%i' % (group, id)
         self.id = id
+        self.name_without_colon = f'{group}_{id}'
         """ self.name returns the agents name, which is the group name and the
         id
         """
